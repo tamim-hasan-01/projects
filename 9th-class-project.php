@@ -89,12 +89,12 @@
                     $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
                    }
                 
- for($i=0; $i<2; $i++){
+/*  for($i=0; $i<2; $i++){
          for($j=0; $j<2; $j++){
                    $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
                  //  echo $arr33[$i][$j].'<br>';
                 }
-            }             //for singel mathematical operation of arrays...                     
+            } */             //for singel mathematical operation of arrays...                     
 
  }                              
 
