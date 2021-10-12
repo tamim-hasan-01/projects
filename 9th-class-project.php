@@ -81,6 +81,7 @@
 
             if($operator == "add"){
                 $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+                //  array_push();
                }
                else if($operator == "sub"){
                 $arr33[$i][$j] = $arr11[$i][$j] - $arr22[$i][$j];
@@ -88,7 +89,26 @@
                   else if($operator == "multiply"){
                     $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
                    }
-                
+if($operator == "add"){
+    for($i=0; $i<2; $i++){
+        for($j=0; $j<2; $j++){
+                  $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+             }
+            }
+        }
+     else if($operator == "sub"){
+        for($i=0; $i<2; $i++){
+            for($j=0; $j<2; $j++){
+                      $arr33[$i][$j] = $arr11[$i][$j] - $arr22[$i][$j];
+                 }
+                }
+                   }
+         else if($operator == "multiply"){
+            for($i=0; $i<2; $i++){
+                for($j=0; $j<2; $j++){
+                          $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+                     }
+                    }   }
 /*  for($i=0; $i<2; $i++){
          for($j=0; $j<2; $j++){
                    $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
@@ -96,7 +116,7 @@
                 }
             } */             //for singel mathematical operation of arrays...                     
 
- }                              
+                          
 
 ?>
 
