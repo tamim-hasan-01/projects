@@ -81,7 +81,10 @@ if (is_numeric($num24)) {
     else {
         echo $num24 . " is not numeric"."<br>";
     }
-    
+
+echo"<br>";
+echo"<br>";
+
      $arr11=array(
         array($num11,$num12),
         array($num13,$num14));
