@@ -29,10 +29,9 @@
         array($num11,$num12),
         array($num13,$num14));
 
-        $arr22=array(
-            array($num21,$num22),
-            array($num23,$num24));
-
+     $arr22=array(
+         array($num21,$num22),
+         array($num23,$num24));
 
 
     
@@ -79,7 +78,7 @@
                     //echo "<br>";
             }                 //to set value in an array, 2 for loops to check if it works... 
 
-            if($operator == "add"){
+           /*  if($operator == "add"){
                 $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
                 //  array_push();
                }
@@ -88,7 +87,7 @@
                }
                   else if($operator == "multiply"){
                     $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
-                   }
+                   } */
 if($operator == "add"){
     for($i=0; $i<2; $i++){
         for($j=0; $j<2; $j++){
@@ -106,9 +105,11 @@ if($operator == "add"){
          else if($operator == "multiply"){
             for($i=0; $i<2; $i++){
                 for($j=0; $j<2; $j++){
-                          $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+                          $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
                      }
-                    }   }
+                    }   
+                }
+            }
 /*  for($i=0; $i<2; $i++){
          for($j=0; $j<2; $j++){
                    $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
@@ -150,4 +151,4 @@ if($operator == "add"){
 
     </form>   
    </body>
-   </html>
+    </html>
