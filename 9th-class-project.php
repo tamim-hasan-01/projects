@@ -10,8 +10,8 @@
     $result3="";
     $result4="";
     $arr33=array(
-        array(),
-        array()
+        array([0][0]=>"",[0][1]=>""),
+        array([1][0]=>"",[1][1]=>"")
     );
 
    if(isset($_POST['operator'])){
@@ -33,61 +33,6 @@
          array($num21,$num22),
          array($num23,$num24));
 
-
-    
-      if($operator == "add"){
-         $result1= $num11 + $num21;
-         //echo $result1;
-        }
-        else if($operator == "sub"){
-          $result1= $num11 - $num21;
-          //echo $result1;
-        }
-           else if($operator == "multiply"){
-              $result1= $num11 * $num21;
-             // echo $result1;
-            }                                 //function for mathematical operations for result box 1
-
-     if($operator == "add"){
-                $result2= $num12 + $num22;
-               // echo $result2;
-               }
-               else if($operator == "sub"){
-                 $result2= $num12 - $num22;
-                 //echo $result2;
-               }
-                  else if($operator == "multiply"){
-                     $result2= $num12 * $num22;
-                    // echo $result2;
-                   }                           //function for mathematical operations for result box 2
-     $arr11=array(
-        array($num11,$num12),
-        array($num13,$num14)); 
-        for($i=0; $i<count($arr11); $i++){
-            for($j=0; $j<2; $j++);
-               // echo $arr11[$i][$j];
-               // echo "<br>";
-        }                                //to set value in an array, 2 for loops to check if it works...
-
-    $arr22=array(
-         array($num21,$num22),
-         array($num23,$num24)); 
-             for($i=0; $i<count($arr22); $i++){
-             for($j=0; $j<2; $j++);
-                   // echo $arr22[$i][$j];
-                    //echo "<br>";
-            }                 //to set value in an array, 2 for loops to check if it works... 
-
-           /*  if($operator == "add"){
-                $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
-                //  array_push();
-               }
-               else if($operator == "sub"){
-                $arr33[$i][$j] = $arr11[$i][$j] - $arr22[$i][$j];
-               }
-                  else if($operator == "multiply"){
-                    $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
-                   } */
 if($operator == "add"){
     for($i=0; $i<2; $i++){
         for($j=0; $j<2; $j++){
@@ -95,27 +40,22 @@ if($operator == "add"){
              }
             }
         }
-     else if($operator == "sub"){
-        for($i=0; $i<2; $i++){
-            for($j=0; $j<2; $j++){
-                      $arr33[$i][$j] = $arr11[$i][$j] - $arr22[$i][$j];
-                 }
-                }
-                   }
-         else if($operator == "multiply"){
-            for($i=0; $i<2; $i++){
-                for($j=0; $j<2; $j++){
-                          $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
-                     }
-                    }   
-                }
-            }
-/*  for($i=0; $i<2; $i++){
-         for($j=0; $j<2; $j++){
-                   $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
-                 //  echo $arr33[$i][$j].'<br>';
-                }
-            } */             //for singel mathematical operation of arrays...                     
+ else if($operator == "sub"){
+    for($i=0; $i<2; $i++){
+        for($j=0; $j<2; $j++){
+            $arr33[$i][$j] = $arr11[$i][$j] - $arr22[$i][$j];
+        }
+    }
+ }
+else if($operator == "multiply"){
+    for($i=0; $i<2; $i++){
+        for($j=0; $j<2; $j++){
+            $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
+        }
+    }   
+}
+  
+}
 
                           
 
