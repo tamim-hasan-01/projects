@@ -10,8 +10,8 @@
     $result3="";
     $result4="";
     $arr33=array(
-        array([0][0]=>"",[0][1]=>""),
-        array([1][0]=>"",[1][1]=>"")
+        array(),
+        array()
     );
 
    if(isset($_POST['operator'])){
