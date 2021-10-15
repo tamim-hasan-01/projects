@@ -109,10 +109,10 @@ else if($operator == "multiply"){
         <label>
             result
         </label><br>
-        <input name="result" value="<?php echo $arr33[0][0]?>">
-        <input name="result" value="<?php echo $arr33[0][1]?>"><br>
-        <input name="result" value="<?php echo $arr33[1][0]?>">
-        <input name="result" value="<?php echo $arr33[1][1]?>"><br>
+        <input name="result" value="<?php if(isset($_POST['operator'])){echo $arr33[0][0];}?>">
+        <input name="result" value="<?php if(isset($_POST['operator'])){echo $arr33[0][1];}?>"><br>
+        <input name="result" value="<?php if(isset($_POST['operator'])){echo $arr33[1][0];}?>">
+        <input name="result" value="<?php if(isset($_POST['operator'])){echo $arr33[1][1];}?>"><br>
         <input type="submit" value="add" name="operator">
         <input type="submit" value="sub" name="operator">
         <input type="submit" value="multiply" name="operator"><br>
