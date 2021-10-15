@@ -26,61 +26,29 @@
      $operator = $_POST['operator'];
     
      
-if (is_numeric($num11)) {
-        echo $num11 . " is numeric"."<br>";
-    }
-    else {
-        echo $num11 . " is not numeric"."<br>";
-    }
+if (is_numeric($num11)) { echo $num11 . " is numeric"."<br>";}
+    else { echo $num11 . " is not numeric"."<br>";}
 
-if (is_numeric($num12)) {
-        echo $num12 . " is numeric"."<br>";
-    }
-    else {
-        echo $num12 . " is not numeric"."<br>";
-    }
+if (is_numeric($num12)) { echo $num12 . " is numeric"."<br>";}
+    else { echo $num12 . " is not numeric"."<br>";}
 
-if (is_numeric($num13)) {
-        echo $num13 . " is numeric"."<br>";
-    }
-    else {
-        echo $num13 . " is not numeric"."<br>";
-    }
+if (is_numeric($num13)) { echo $num13 . " is numeric"."<br>";}
+    else { echo $num13 . " is not numeric"."<br>"; }
 
-if (is_numeric($num14)) {
-        echo $num14 . " is numeric"."<br>";
-    }
-    else {
-        echo $num14 . " is not numeric"."<br>";
-    }
+if (is_numeric($num14)) { echo $num14 . " is numeric"."<br>";}
+    else { echo $num14 . " is not numeric"."<br>";}
 
-if (is_numeric($num21)) {
-        echo $num21 . " is numeric"."<br>";
-    }
-    else {
-        echo $num21 . " is not numeric"."<br>";
-    }
+if (is_numeric($num21)) { echo $num21 . " is numeric"."<br>";}
+    else { echo $num21 . " is not numeric"."<br>";}
 
-if (is_numeric($num22)) {
-        echo $num22 . " is numeric"."<br>";
-    }
-    else {
-        echo $num22 . " is not numeric"."<br>";
-    }
+if (is_numeric($num22)) { echo $num22 . " is numeric"."<br>";}
+    else { echo $num22 . " is not numeric"."<br>";}
 
-if (is_numeric($num23)) {
-        echo $num23 . " is numeric"."<br>";
-    }
-    else {
-        echo $num23 . " is not numeric"."<br>";
-    }    
+if (is_numeric($num23)) { echo $num23 . " is numeric"."<br>";}
+    else { echo $num23 . " is not numeric"."<br>";}    
 
-if (is_numeric($num24)) {
-        echo $num24 . " is numeric"."<br>";
-    }
-    else {
-        echo $num24 . " is not numeric"."<br>";
-    }
+if (is_numeric($num24)) {echo $num24 . " is numeric"."<br>";}
+    else {echo $num24 . " is not numeric"."<br>";}
 
 echo"<br>";
 echo"<br>";
