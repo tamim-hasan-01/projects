@@ -58,13 +58,13 @@
         echo"<br>";
         echo"<br>";
         
-        $arr11=array(
-            array($num11,$num12),
-            array($num13,$num14));
+   $arr11=array(
+        array($num11,$num12),
+        array($num13,$num14));
             
-            $arr22=array(
-                array($num21,$num22),
-                array($num23,$num24));
+   $arr22=array(
+         array($num21,$num22),
+         array($num23,$num24));
                 
                 foreach ($arr11 as $key => $value) {
                     if (empty($value)) {
@@ -84,6 +84,7 @@
                     for($i=0; $i<2; $i++){
             for($j=0; $j<2; $j++){
                 $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+                return $arr33;
             }
         }    
     }
