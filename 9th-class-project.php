@@ -80,7 +80,7 @@
                 }if (empty($arr22)) {
                     echo "empty array";
                  }
-                function addition($arr11,$arr22){
+                function add($arr11,$arr22){
                     for($i=0; $i<2; $i++){
             for($j=0; $j<2; $j++){
                 $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
@@ -98,7 +98,7 @@
             } 
         } */
         if($operator == "add"){
-            addition($arr11,$arr22);
+            add($arr11,$arr22);
         }
 
  else if($operator == "sub"){
@@ -121,10 +121,12 @@ else if($operator == "multiply"){
     $arr33[1][1]= ($arr11[1][0] * $arr22[0][1]) + ($arr11[1][1] *$arr22[1][1]);
     
 }
-if(empty($arr11)){
-    echo "Given Array is empty";}
+    if (!empty($arr11))
+    { echo "Given Array is empty";}
 
-}
+    
+    }
+
 
                           
 
