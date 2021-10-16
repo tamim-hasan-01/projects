@@ -13,9 +13,10 @@
         array(),
         array()
     );
+   
 
-   if(isset($_POST['operator'])){
-     $num11 = $_POST['num11'];           //to receive value from input box or user interface
+    if(isset($_POST['operator'])){
+        $num11 = $_POST['num11'];           //to receive value from input box or user interface
      $num12 = $_POST['num12'];  
      $num13 = $_POST['num13'];           
      $num14 = $_POST['num14'];
@@ -24,63 +25,86 @@
      $num23 = $_POST['num23'];
      $num24 = $_POST['num24'];
      $operator = $_POST['operator'];
-    
      
-if (is_numeric($num11)) { echo $num11 . " is numeric"."<br>";}
-    else { echo $num11 . " is not numeric"."<br>";}
-
-if (is_numeric($num12)) { echo $num12 . " is numeric"."<br>";}
-    else { echo $num12 . " is not numeric"."<br>";}
-
-if (is_numeric($num13)) { echo $num13 . " is numeric"."<br>";}
-    else { echo $num13 . " is not numeric"."<br>"; }
-
-if (is_numeric($num14)) { echo $num14 . " is numeric"."<br>";}
-    else { echo $num14 . " is not numeric"."<br>";}
-
-if (is_numeric($num21)) { echo $num21 . " is numeric"."<br>";}
-    else { echo $num21 . " is not numeric"."<br>";}
-
-if (is_numeric($num22)) { echo $num22 . " is numeric"."<br>";}
-    else { echo $num22 . " is not numeric"."<br>";}
-
-if (is_numeric($num23)) { echo $num23 . " is numeric"."<br>";}
-    else { echo $num23 . " is not numeric"."<br>";}    
-
-if (is_numeric($num24)) {echo $num24 . " is numeric"."<br>";}
-    else {echo $num24 . " is not numeric"."<br>";}
-
-echo"<br>";
-echo"<br>";
-
-     $arr11=array(
-        array($num11,$num12),
-        array($num13,$num14));
-
-     $arr22=array(
-         array($num21,$num22),
-         array($num23,$num24));
-
-/* function addition($arr11,$arr22){
-    for($i=0; $i<2; $i++){
-        for($j=0; $j<2; $j++){
-                  $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
-             }
-            }    
-} */
-
-
-if($operator == "add"){
- for($i=0; $i<2; $i++){
-        for($j=0; $j<2; $j++){
-                  $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+     
+     if (is_numeric($num11)) { echo $num11 . " is numeric"."<br>";}
+     else { echo $num11 . " is not numeric"."<br>";}
+     
+     if (is_numeric($num12)) { echo $num12 . " is numeric"."<br>";}
+     else { echo $num12 . " is not numeric"."<br>";}
+     
+     if (is_numeric($num13)) { echo $num13 . " is numeric"."<br>";}
+     else { echo $num13 . " is not numeric"."<br>"; }
+     
+     if (is_numeric($num14)) { echo $num14 . " is numeric"."<br>";}
+     else { echo $num14 . " is not numeric"."<br>";}
+     
+     if (is_numeric($num21)) { echo $num21 . " is numeric"."<br>";}
+     else { echo $num21 . " is not numeric"."<br>";}
+     
+     if (is_numeric($num22)) { echo $num22 . " is numeric"."<br>";}
+     else { echo $num22 . " is not numeric"."<br>";}
+     
+     if (is_numeric($num23)) { echo $num23 . " is numeric"."<br>";}
+     else { echo $num23 . " is not numeric"."<br>";}    
+     
+     if (is_numeric($num24)) {echo $num24 . " is numeric"."<br>";}
+     else {echo $num24 . " is not numeric"."<br>";}
+     
+    /*  if(!empty($num21)){
+        echo "Given Array is empty";} */
+        
+        
+        echo"<br>";
+        echo"<br>";
+        
+        $arr11=array(
+            array($num11,$num12),
+            array($num13,$num14));
+            
+            $arr22=array(
+                array($num21,$num22),
+                array($num23,$num24));
+                
+                foreach ($arr11 as $key => $value) {
+                    if (empty($value)) {
+                       unset($arr11[$key]);
+                    }
+                }if (empty($arr11)) {
+                    echo "empty array";
+                 }
+            foreach ($arr22 as $key => $value) {
+               if (empty($value)) {
+                   unset($arr22[$key]);
+                    }
+                }if (empty($arr22)) {
+                    echo "empty array";
+                 }
+                function addition($arr11,$arr22){
+                    for($i=0; $i<2; $i++){
+            for($j=0; $j<2; $j++){
+                $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+            }
+        }    
+    }
+             
+             
+  /*  if($operator == "add"){
+       for($i=0; $i<2; $i++){
+             for($j=0; $j<2; $j++){
+                $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
              }
             } 
+        } */
+        if($operator == "add"){
+            addition($arr11,$arr22);
         }
+
  else if($operator == "sub"){
     for($i=0; $i<2; $i++){
         for($j=0; $j<2; $j++){
             $arr33[$i][$j] = $arr11[$i][$j] - $arr22[$i][$j];
+            
         }
     }
  }
@@ -96,7 +120,9 @@ else if($operator == "multiply"){
     $arr33[1][1]= ($arr11[1][0] * $arr22[0][1]) + ($arr11[1][1] *$arr22[1][1]);
     
 }
-  
+if(empty($arr11)){
+    echo "Given Array is empty";}
+
 }
 
                           
