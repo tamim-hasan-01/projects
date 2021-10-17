@@ -80,11 +80,11 @@
                 }if (empty($arr22)) {
                     echo "empty array";
                  }
-                function add($arr11,$arr22){
-                    for($i=0; $i<2; $i++){
-            for($j=0; $j<2; $j++){
-                $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
-                return $arr33;
+       function add($arr11,$arr22){
+             for($i=0; $i<2; $i++){
+             for($j=0; $j<2; $j++){
+            $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
+             return $arr33;
             }
         }    
     }
@@ -110,22 +110,14 @@
     }
  }
 else if($operator == "multiply"){
-    /* for($i=0; $i<2; $i++){
-        for($j=0; $j<2; $j++){
-            $arr33[$i][$j] = $arr11[$i][$j] * $arr22[$i][$j];
-        }
-    } */ 
+     
     $arr33[0][0]= ($arr11[0][0] * $arr22[0][0]) + ($arr11[0][1] *$arr22[1][0]);
     $arr33[0][1]= ($arr11[0][0] * $arr22[0][1]) + ($arr11[0][1] *$arr22[1][1]);
     $arr33[1][0]= ($arr11[1][0] * $arr22[0][0]) + ($arr11[1][1] *$arr22[1][0]);
     $arr33[1][1]= ($arr11[1][0] * $arr22[0][1]) + ($arr11[1][1] *$arr22[1][1]);
     
 }
-    if (!empty($arr11))
-    { echo "Given Array is empty";}
-
-    
-    }
+} 
 
 
                           
