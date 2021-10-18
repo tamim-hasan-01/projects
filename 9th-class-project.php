@@ -80,26 +80,26 @@
                 }if (empty($arr22)) {
                     echo "empty array";
                  }
-       function add($arr11,$arr22){
+       /* function add($arr11,$arr22){
              for($i=0; $i<2; $i++){
              for($j=0; $j<2; $j++){
             $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
              return $arr33;
             }
         }    
-    }
+    } */
              
              
-  /*  if($operator == "add"){
+   if($operator == "add"){
        for($i=0; $i<2; $i++){
              for($j=0; $j<2; $j++){
                 $arr33[$i][$j] = $arr11[$i][$j] + $arr22[$i][$j];
              }
             } 
-        } */
-        if($operator == "add"){
-            add($arr11,$arr22);
         }
+        /* if($operator == "add"){
+            add($arr11,$arr22);
+        } */
 
  else if($operator == "sub"){
     for($i=0; $i<2; $i++){
@@ -129,17 +129,17 @@ else if($operator == "multiply"){
         <label>
             first matrix
         </label><br>
-        <input type="number" name="num11" value="<?php echo $num11?>">
-        <input type="number" name="num12" value="<?php echo $num12?>"><br>
-        <input type="number" name="num13" value="<?php echo $num13?>">
-        <input type="number" name="num14" value="<?php echo $num14?>"><br>
+        <input type="number" name="num11" step="any" value="<?php echo $num11?>">
+        <input type="number" name="num12" step="any" value="<?php echo $num12?>"><br>
+        <input type="number" name="num13" step="any" value="<?php echo $num13?>">
+        <input type="number" name="num14" step="any" value="<?php echo $num14?>"><br>
         <label>
             second matrix
         </label><br>
-        <input type="number" name="num21" value="<?php echo $num21?>">
-        <input type="number" name="num22" value="<?php echo $num22?>"><br>
-        <input type="number" name="num23" value="<?php echo $num23?>">
-        <input type="number" name="num24" value="<?php echo $num24?>"><br>
+        <input type="number" name="num21" step="any" value="<?php echo $num21?>">
+        <input type="number" name="num22" step="any" value="<?php echo $num22?>"><br>
+        <input type="number" name="num23" step="any" value="<?php echo $num23?>">
+        <input type="number" name="num24" step="any" value="<?php echo $num24?>"><br>
 
         <label>
             result
